@@ -6,7 +6,7 @@ This repository contains the source code for a project management website built 
 
 <img width="1496" alt="Screenshot 2024-03-13 at 12 48 01 AM" src="https://github.com/ameyagidh/ProjectManagementWebsite/assets/65457905/1356fecb-aee4-479d-8ce2-18013370e326">
 
-![ezgif com-animated-gif-maker](https://github.com/ameyagidh/ProjectManagementWebsite/assets/65457905/03466620-5226-4680-9bd6-fc03650d55fc)
+![ezgif com-animated-gif-maker (1)](https://github.com/ameyagidh/ProjectManagementWebsite/assets/65457905/8787f100-e3f5-4707-9b27-e48390f97a6b)
 
 
 ## Features
