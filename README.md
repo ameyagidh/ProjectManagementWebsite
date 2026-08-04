@@ -87,13 +87,10 @@ training step is required to run the app - `train_triage.py` is there for reprod
 or extending it. See `docs/TECHNICAL.md` for the full pipeline and honest accuracy
 caveats.
 
-## Security note
+## Configuration
 
-An earlier version of this repo had a MongoDB Atlas connection string (including a
-password) hardcoded in `ProManageServer/index.js`. It has been moved to an
-environment variable (`MONGODB_URI`, see `.env.example`). If you're the repo owner:
-**that credential should be treated as compromised and rotated**, since it was public
-in git history regardless of the code fix.
+The database connection is configured via the `MONGODB_URI` environment variable -
+see `.env.example`. No credentials are hardcoded in source.
 
 ## License
 
