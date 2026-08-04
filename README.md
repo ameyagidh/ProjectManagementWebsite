@@ -1,4 +1,4 @@
-# ProManage
+# ProjectManagementWebsite
 
 A real-time, multi-user project management platform built on the MERN stack, with an
 AI microservice that triages incoming tasks by predicted priority. Teams create rooms
