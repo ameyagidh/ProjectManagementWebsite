@@ -11,6 +11,7 @@ require('dotenv').config();
 
 const client_id = process.env.GITHUB_CLIENT_ID;
 const secret_key = process.env.GITHUB_SECRET_KEY;
+const AI_SERVICE_URL = process.env.AI_SERVICE_URL || "http://localhost:8001";
 
 const io = require('socket.io')(server)
 
@@ -20,7 +21,7 @@ server.listen(process.env.PORT || 4000, () => {
 const mongoose = require('mongoose');
 const User = require('./schema/User');
 
-const uri = "mongodb+srv://ameyagidh:Ameyagidh1234@cluster0.pw4btug.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+const uri = process.env.MONGODB_URI || "mongodb://localhost:27017/promanage"
 mongoose.connect(uri, {
     useNewUrlParser: true,
     useUnifiedTopology: true
@@ -418,6 +419,30 @@ app.post('/addData', async(req, res) => {
     res.send({ data })
   }
 })
+
+// AI: task priority triage, proxied to the ProManageAI microservice
+// (TF-IDF + LinearSVC model, see ProManageAI/train_triage.py).
+app.post('/ai/triage', async (req, res) => {
+  try {
+    const { title, description } = req.body;
+    const { data } = await axios.post(`${AI_SERVICE_URL}/triage`, { title, description });
+    res.json(data);
+  } catch (err) {
+    res.status(503).json({ error: 'AI service unavailable', details: err.message });
+  }
+});
+
+// AI: standup-style summary of a room's activity logs.
+app.get('/ai/summarize/:roomID', async (req, res) => {
+  try {
+    const room = await Room.findOne({ roomID: req.params.roomID }).lean();
+    const logLines = (room?.logs || []).slice(-15).map((l) => `${l.from}: ${l.name}`);
+    const { data } = await axios.post(`${AI_SERVICE_URL}/summarize`, { logs: logLines });
+    res.json(data);
+  } catch (err) {
+    res.status(503).json({ error: 'AI service unavailable', details: err.message });
+  }
+});
 
 app.get('/getPendingData/:id/:username', async (req, res) => {
   const data = await Room.findOne({ roomID: req.params.id }).lean();

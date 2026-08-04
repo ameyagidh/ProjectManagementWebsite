@@ -8,6 +8,7 @@ import { Card, CardActionArea, CardContent, Grid, Typography } from "@material-u
 import NavBar from "./NavBar";
 import axios from "axios";
 import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
+import AITriagePanel from "./AITriagePanel";
 
 const styles = {
   light: {
@@ -67,7 +68,7 @@ function Home() {
                   if(row.isGitRepo){
                     return(
                         <Grid key={i} style={{marginRight:"20px", marginBottom: "20px"}} item xs={2}>
-                            <Card style={{boxShadow: "2px 2px 2px #575859", backgroundColor: theme.innerBox}} onClick={()=> handleProject(row.roomID, row.data.authLevel)}>
+                            <Card className="pm-card" style={{backgroundColor: theme.innerBox}} onClick={()=> handleProject(row.roomID, row.data.authLevel)}>
                                 <CardActionArea>
                                     <CardContent>
                                     <div style={{ textAlign: "center" }}>
@@ -112,7 +113,7 @@ function Home() {
                   if(!row.isGitRepo)
                     return(
                         <Grid key={i} style={{marginRight:"20px", marginBottom: "20px"}} item xs={2}>
-                            <Card style={{boxShadow: "2px 2px 2px #575859", backgroundColor: theme.innerBox}} onClick={()=> handleProject(row.roomID, row.data.authLevel)}>
+                            <Card className="pm-card" style={{backgroundColor: theme.innerBox}} onClick={()=> handleProject(row.roomID, row.data.authLevel)}>
                                 <CardActionArea>
                                     <CardContent>
                                     <div style={{ textAlign: "center" }}>
@@ -146,9 +147,10 @@ function Home() {
     <div >
     <NavBar />
     <div className="App" style={{ paddingTop: "3%", minHeight: "93.9vh", width: "100%", backgroundColor:theme.ui }}>
+          <AITriagePanel />
           {gitRooms()}
           {customRooms()}
-          
+
     </div>
     </div>
   );

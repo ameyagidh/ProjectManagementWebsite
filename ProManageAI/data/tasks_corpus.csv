@@ -1,0 +1,365 @@
+text,priority
+Production login endpoint is down for all users,High
+Production file upload is down for all users,High
+Production database connection pool is down for all users,High
+Production payment webhook is down for all users,High
+Production websocket server is down for all users,High
+Production task drag-and-drop is down for all users,High
+Production session handling is down for all users,High
+Production checkout flow is down for all users,High
+Production signup form is down for all users,High
+Production JWT validation is down for all users,High
+Production email notification service is down for all users,High
+Production room join logic is down for all users,High
+Critical outage: login endpoint returning 500 errors,High
+Critical outage: file upload returning 500 errors,High
+Critical outage: database connection pool returning 500 errors,High
+Critical outage: payment webhook returning 500 errors,High
+Critical outage: websocket server returning 500 errors,High
+Critical outage: task drag-and-drop returning 500 errors,High
+Critical outage: session handling returning 500 errors,High
+Critical outage: checkout flow returning 500 errors,High
+Critical outage: signup form returning 500 errors,High
+Critical outage: JWT validation returning 500 errors,High
+Critical outage: email notification service returning 500 errors,High
+Critical outage: room join logic returning 500 errors,High
+Security issue: login endpoint exposes user data,High
+Security issue: file upload exposes user data,High
+Security issue: database connection pool exposes user data,High
+Security issue: payment webhook exposes user data,High
+Security issue: websocket server exposes user data,High
+Security issue: task drag-and-drop exposes user data,High
+Security issue: session handling exposes user data,High
+Security issue: checkout flow exposes user data,High
+Security issue: signup form exposes user data,High
+Security issue: JWT validation exposes user data,High
+Security issue: email notification service exposes user data,High
+Security issue: room join logic exposes user data,High
+Data loss bug in login endpoint after refresh,High
+Data loss bug in file upload after refresh,High
+Data loss bug in database connection pool after refresh,High
+Data loss bug in payment webhook after refresh,High
+Data loss bug in websocket server after refresh,High
+Data loss bug in task drag-and-drop after refresh,High
+Data loss bug in session handling after refresh,High
+Data loss bug in checkout flow after refresh,High
+Data loss bug in signup form after refresh,High
+Data loss bug in JWT validation after refresh,High
+Data loss bug in email notification service after refresh,High
+Data loss bug in room join logic after refresh,High
+login endpoint crashes the server under load,High
+file upload crashes the server under load,High
+database connection pool crashes the server under load,High
+payment webhook crashes the server under load,High
+websocket server crashes the server under load,High
+task drag-and-drop crashes the server under load,High
+session handling crashes the server under load,High
+checkout flow crashes the server under load,High
+signup form crashes the server under load,High
+JWT validation crashes the server under load,High
+email notification service crashes the server under load,High
+room join logic crashes the server under load,High
+Users cannot complete login endpoint at all since deploy,High
+Users cannot complete file upload at all since deploy,High
+Users cannot complete database connection pool at all since deploy,High
+Users cannot complete payment webhook at all since deploy,High
+Users cannot complete websocket server at all since deploy,High
+Users cannot complete task drag-and-drop at all since deploy,High
+Users cannot complete session handling at all since deploy,High
+Users cannot complete checkout flow at all since deploy,High
+Users cannot complete signup form at all since deploy,High
+Users cannot complete JWT validation at all since deploy,High
+Users cannot complete email notification service at all since deploy,High
+Users cannot complete room join logic at all since deploy,High
+"Payment failure in login endpoint, customers affected",High
+"Payment failure in file upload, customers affected",High
+"Payment failure in database connection pool, customers affected",High
+"Payment failure in payment webhook, customers affected",High
+"Payment failure in websocket server, customers affected",High
+"Payment failure in task drag-and-drop, customers affected",High
+"Payment failure in session handling, customers affected",High
+"Payment failure in checkout flow, customers affected",High
+"Payment failure in signup form, customers affected",High
+"Payment failure in JWT validation, customers affected",High
+"Payment failure in email notification service, customers affected",High
+"Payment failure in room join logic, customers affected",High
+Memory leak in login endpoint crashes app after hours,High
+Memory leak in file upload crashes app after hours,High
+Memory leak in database connection pool crashes app after hours,High
+Memory leak in payment webhook crashes app after hours,High
+Memory leak in websocket server crashes app after hours,High
+Memory leak in task drag-and-drop crashes app after hours,High
+Memory leak in session handling crashes app after hours,High
+Memory leak in checkout flow crashes app after hours,High
+Memory leak in signup form crashes app after hours,High
+Memory leak in JWT validation crashes app after hours,High
+Memory leak in email notification service crashes app after hours,High
+Memory leak in room join logic crashes app after hours,High
+Race condition corrupts login endpoint during concurrent use,High
+Race condition corrupts file upload during concurrent use,High
+Race condition corrupts database connection pool during concurrent use,High
+Race condition corrupts payment webhook during concurrent use,High
+Race condition corrupts websocket server during concurrent use,High
+Race condition corrupts task drag-and-drop during concurrent use,High
+Race condition corrupts session handling during concurrent use,High
+Race condition corrupts checkout flow during concurrent use,High
+Race condition corrupts signup form during concurrent use,High
+Race condition corrupts JWT validation during concurrent use,High
+Race condition corrupts email notification service during concurrent use,High
+Race condition corrupts room join logic during concurrent use,High
+Auth bypass discovered in login endpoint,High
+Auth bypass discovered in file upload,High
+Auth bypass discovered in database connection pool,High
+Auth bypass discovered in payment webhook,High
+Auth bypass discovered in websocket server,High
+Auth bypass discovered in task drag-and-drop,High
+Auth bypass discovered in session handling,High
+Auth bypass discovered in checkout flow,High
+Auth bypass discovered in signup form,High
+Auth bypass discovered in JWT validation,High
+Auth bypass discovered in email notification service,High
+Auth bypass discovered in room join logic,High
+login endpoint completely unresponsive in production,High
+file upload completely unresponsive in production,High
+database connection pool completely unresponsive in production,High
+payment webhook completely unresponsive in production,High
+websocket server completely unresponsive in production,High
+task drag-and-drop completely unresponsive in production,High
+session handling completely unresponsive in production,High
+checkout flow completely unresponsive in production,High
+signup form completely unresponsive in production,High
+JWT validation completely unresponsive in production,High
+email notification service completely unresponsive in production,High
+room join logic completely unresponsive in production,High
+Urgent: login endpoint blocking all customer signups,High
+Urgent: file upload blocking all customer signups,High
+Urgent: database connection pool blocking all customer signups,High
+Urgent: payment webhook blocking all customer signups,High
+Urgent: websocket server blocking all customer signups,High
+Urgent: task drag-and-drop blocking all customer signups,High
+Urgent: session handling blocking all customer signups,High
+Urgent: checkout flow blocking all customer signups,High
+Urgent: signup form blocking all customer signups,High
+Urgent: JWT validation blocking all customer signups,High
+Urgent: email notification service blocking all customer signups,High
+Urgent: room join logic blocking all customer signups,High
+Add dark mode toggle to the app,Medium
+Add kanban board loading state to the app,Medium
+Add task search to the app,Medium
+Add chat notifications to the app,Medium
+Add mobile navbar to the app,Medium
+Add project list to the app,Medium
+Add profile avatar upload to the app,Medium
+Add socket event handlers to the app,Medium
+Add signup validation to the app,Medium
+Add room creation flow to the app,Medium
+Add drag reordering to the app,Medium
+Add markdown chat rendering to the app,Medium
+Improve dark mode toggle for better usability,Medium
+Improve kanban board loading state for better usability,Medium
+Improve task search for better usability,Medium
+Improve chat notifications for better usability,Medium
+Improve mobile navbar for better usability,Medium
+Improve project list for better usability,Medium
+Improve profile avatar upload for better usability,Medium
+Improve socket event handlers for better usability,Medium
+Improve signup validation for better usability,Medium
+Improve room creation flow for better usability,Medium
+Improve drag reordering for better usability,Medium
+Improve markdown chat rendering for better usability,Medium
+Refactor dark mode toggle into a cleaner module,Medium
+Refactor kanban board loading state into a cleaner module,Medium
+Refactor task search into a cleaner module,Medium
+Refactor chat notifications into a cleaner module,Medium
+Refactor mobile navbar into a cleaner module,Medium
+Refactor project list into a cleaner module,Medium
+Refactor profile avatar upload into a cleaner module,Medium
+Refactor socket event handlers into a cleaner module,Medium
+Refactor signup validation into a cleaner module,Medium
+Refactor room creation flow into a cleaner module,Medium
+Refactor drag reordering into a cleaner module,Medium
+Refactor markdown chat rendering into a cleaner module,Medium
+Support dark mode toggle across more screens,Medium
+Support kanban board loading state across more screens,Medium
+Support task search across more screens,Medium
+Support chat notifications across more screens,Medium
+Support mobile navbar across more screens,Medium
+Support project list across more screens,Medium
+Support profile avatar upload across more screens,Medium
+Support socket event handlers across more screens,Medium
+Support signup validation across more screens,Medium
+Support room creation flow across more screens,Medium
+Support drag reordering across more screens,Medium
+Support markdown chat rendering across more screens,Medium
+Migrate dark mode toggle to the new design system,Medium
+Migrate kanban board loading state to the new design system,Medium
+Migrate task search to the new design system,Medium
+Migrate chat notifications to the new design system,Medium
+Migrate mobile navbar to the new design system,Medium
+Migrate project list to the new design system,Medium
+Migrate profile avatar upload to the new design system,Medium
+Migrate socket event handlers to the new design system,Medium
+Migrate signup validation to the new design system,Medium
+Migrate room creation flow to the new design system,Medium
+Migrate drag reordering to the new design system,Medium
+Migrate markdown chat rendering to the new design system,Medium
+Add tests for dark mode toggle,Medium
+Add tests for kanban board loading state,Medium
+Add tests for task search,Medium
+Add tests for chat notifications,Medium
+Add tests for mobile navbar,Medium
+Add tests for project list,Medium
+Add tests for profile avatar upload,Medium
+Add tests for socket event handlers,Medium
+Add tests for signup validation,Medium
+Add tests for room creation flow,Medium
+Add tests for drag reordering,Medium
+Add tests for markdown chat rendering,Medium
+Improve performance of dark mode toggle,Medium
+Improve performance of kanban board loading state,Medium
+Improve performance of task search,Medium
+Improve performance of chat notifications,Medium
+Improve performance of mobile navbar,Medium
+Improve performance of project list,Medium
+Improve performance of profile avatar upload,Medium
+Improve performance of socket event handlers,Medium
+Improve performance of signup validation,Medium
+Improve performance of room creation flow,Medium
+Improve performance of drag reordering,Medium
+Improve performance of markdown chat rendering,Medium
+Add pagination to dark mode toggle,Medium
+Add pagination to kanban board loading state,Medium
+Add pagination to task search,Medium
+Add pagination to chat notifications,Medium
+Add pagination to mobile navbar,Medium
+Add pagination to project list,Medium
+Add pagination to profile avatar upload,Medium
+Add pagination to socket event handlers,Medium
+Add pagination to signup validation,Medium
+Add pagination to room creation flow,Medium
+Add pagination to drag reordering,Medium
+Add pagination to markdown chat rendering,Medium
+Improve error handling in dark mode toggle,Medium
+Improve error handling in kanban board loading state,Medium
+Improve error handling in task search,Medium
+Improve error handling in chat notifications,Medium
+Improve error handling in mobile navbar,Medium
+Improve error handling in project list,Medium
+Improve error handling in profile avatar upload,Medium
+Improve error handling in socket event handlers,Medium
+Improve error handling in signup validation,Medium
+Improve error handling in room creation flow,Medium
+Improve error handling in drag reordering,Medium
+Improve error handling in markdown chat rendering,Medium
+Add filtering options to dark mode toggle,Medium
+Add filtering options to kanban board loading state,Medium
+Add filtering options to task search,Medium
+Add filtering options to chat notifications,Medium
+Add filtering options to mobile navbar,Medium
+Add filtering options to project list,Medium
+Add filtering options to profile avatar upload,Medium
+Add filtering options to socket event handlers,Medium
+Add filtering options to signup validation,Medium
+Add filtering options to room creation flow,Medium
+Add filtering options to drag reordering,Medium
+Add filtering options to markdown chat rendering,Medium
+Fix typo in login page,Low
+Fix typo in README,Low
+Fix typo in Main.js component,Low
+Fix typo in add room button,Low
+Fix typo in navbar,Low
+Fix typo in settings page,Low
+Fix typo in task card,Low
+Fix typo in footer,Low
+Fix typo in loading spinner,Low
+Fix typo in empty state message,Low
+Update login page documentation,Low
+Update README documentation,Low
+Update Main.js component documentation,Low
+Update add room button documentation,Low
+Update navbar documentation,Low
+Update settings page documentation,Low
+Update task card documentation,Low
+Update footer documentation,Low
+Update loading spinner documentation,Low
+Update empty state message documentation,Low
+Clean up unused code in login page,Low
+Clean up unused code in README,Low
+Clean up unused code in Main.js component,Low
+Clean up unused code in add room button,Low
+Clean up unused code in navbar,Low
+Clean up unused code in settings page,Low
+Clean up unused code in task card,Low
+Clean up unused code in footer,Low
+Clean up unused code in loading spinner,Low
+Clean up unused code in empty state message,Low
+Rename variable in login page for clarity,Low
+Rename variable in README for clarity,Low
+Rename variable in Main.js component for clarity,Low
+Rename variable in add room button for clarity,Low
+Rename variable in navbar for clarity,Low
+Rename variable in settings page for clarity,Low
+Rename variable in task card for clarity,Low
+Rename variable in footer for clarity,Low
+Rename variable in loading spinner for clarity,Low
+Rename variable in empty state message for clarity,Low
+Add tooltip to login page,Low
+Add tooltip to README,Low
+Add tooltip to Main.js component,Low
+Add tooltip to add room button,Low
+Add tooltip to navbar,Low
+Add tooltip to settings page,Low
+Add tooltip to task card,Low
+Add tooltip to footer,Low
+Add tooltip to loading spinner,Low
+Add tooltip to empty state message,Low
+Improve spacing on login page,Low
+Improve spacing on README,Low
+Improve spacing on Main.js component,Low
+Improve spacing on add room button,Low
+Improve spacing on navbar,Low
+Improve spacing on settings page,Low
+Improve spacing on task card,Low
+Improve spacing on footer,Low
+Improve spacing on loading spinner,Low
+Improve spacing on empty state message,Low
+Consider adding animation to login page,Low
+Consider adding animation to README,Low
+Consider adding animation to Main.js component,Low
+Consider adding animation to add room button,Low
+Consider adding animation to navbar,Low
+Consider adding animation to settings page,Low
+Consider adding animation to task card,Low
+Consider adding animation to footer,Low
+Consider adding animation to loading spinner,Low
+Consider adding animation to empty state message,Low
+Nice to have: better font for login page,Low
+Nice to have: better font for README,Low
+Nice to have: better font for Main.js component,Low
+Nice to have: better font for add room button,Low
+Nice to have: better font for navbar,Low
+Nice to have: better font for settings page,Low
+Nice to have: better font for task card,Low
+Nice to have: better font for footer,Low
+Nice to have: better font for loading spinner,Low
+Nice to have: better font for empty state message,Low
+Update changelog for login page,Low
+Update changelog for README,Low
+Update changelog for Main.js component,Low
+Update changelog for add room button,Low
+Update changelog for navbar,Low
+Update changelog for settings page,Low
+Update changelog for task card,Low
+Update changelog for footer,Low
+Update changelog for loading spinner,Low
+Update changelog for empty state message,Low
+Explore alternative icon set for login page,Low
+Explore alternative icon set for README,Low
+Explore alternative icon set for Main.js component,Low
+Explore alternative icon set for add room button,Low
+Explore alternative icon set for navbar,Low
+Explore alternative icon set for settings page,Low
+Explore alternative icon set for task card,Low
+Explore alternative icon set for footer,Low
+Explore alternative icon set for loading spinner,Low
+Explore alternative icon set for empty state message,Low

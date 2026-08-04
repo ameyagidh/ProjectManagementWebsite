@@ -2,36 +2,47 @@ import { createContext, Component} from 'react';
 
 export const ThemeContext = createContext();
 
+// Design tokens for the ProManage premium theme. Two palettes (light/dark)
+// consumed via ThemeContext by every screen - see Login.js, Home.js,
+// NavBar.js, Main.js, AddRoom.js, Logs.js.
 class ThemeContextProvider extends Component {
-    state = { 
+    state = {
         isLightTheme: false,
         light: {
-            text: 'black',
-            ui: '#ebe8e8',
-            box: '#828181',
-            innerBox: '#cccaca',
-            button: '#d4d5d6',
-            input: '#9e9e9e',
-            placeholder: '#383838',
-            navbar: '#c7c6c5',
-            modalColor: '#fcfcfc',
-            modalBackground: '#bab8b8',
-            textNotImp: '#757474',
-            box: '#b8b9ba'
+            text: '#151922',
+            ui: '#F4F5F7',
+            box: '#FFFFFF',
+            innerBox: '#ECEEF3',
+            button: '#6366F1',
+            input: '#FFFFFF',
+            placeholder: '#6B7280',
+            navbar: '#FFFFFF',
+            modalColor: '#FFFFFF',
+            modalBackground: '#E5E7EB',
+            textNotImp: '#6B7280',
+            accent: '#8B5CF6',
+            border: '#E2E4EA',
+            success: '#10B981',
+            warn: '#F59E0B',
+            danger: '#EF4444'
         },
         dark: {
-            text: '#ffffff',
-            ui: 'black',
-            box: '#1f1f1f',
-            innerBox: '#3d3d3d',
-            input: '#343536',
-            button: 'gray',
-            placeholder: '#949392',
-            navbar: '#242323',
-            modalColor: '#000000',
-            modalBackground: '#454444',
-            textNotImp: '#c4c2c2',
-            box: 'gray'
+            text: '#F3F4F6',
+            ui: '#0B0D12',
+            box: '#151922',
+            innerBox: '#1B2130',
+            button: '#6366F1',
+            input: '#1B2130',
+            placeholder: '#9CA3AF',
+            navbar: '#0F1219',
+            modalColor: '#151922',
+            modalBackground: '#1B2130',
+            textNotImp: '#9CA3AF',
+            accent: '#8B5CF6',
+            border: '#232936',
+            success: '#10B981',
+            warn: '#F59E0B',
+            danger: '#EF4444'
         }
      }
      toggleTheme = () => { 
